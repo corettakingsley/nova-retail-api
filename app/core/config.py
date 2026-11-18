@@ -6,12 +6,15 @@ class Settings(BaseSettings):
     APP_NAME: str = "Nova Retail API"
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = True
+    DATABASE_URL: str = ""
 
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
         extra="ignore",
     )
+
+
 
 
 settings = Settings()
