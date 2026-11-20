@@ -1,5 +1,6 @@
 # Python virtual environment
 .venv/
+.venv-azure/
 __pycache__/
 *.py[cod]
 
